@@ -1,0 +1,14 @@
+package br.com.interview.prime;
+
+public class teste {
+
+
+
+
+  public static long main(String[] args){
+     System.out.println("Hello");
+     return 10L;
+ 
+}
+
+}

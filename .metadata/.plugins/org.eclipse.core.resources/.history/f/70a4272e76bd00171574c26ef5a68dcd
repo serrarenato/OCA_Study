@@ -1,0 +1,18 @@
+package br.com.java.stacks;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class MaximumElement {
+	public static void main(String[] args) {
+		HashMap<Integer,Integer> operations = new HashMap<>();
+		Scanner scan = new Scanner(System.in);
+		int nQueries = scan.nextInt();
+		for (int x=0;x<nQueries;x++) {
+			String m = scan.next();
+			String[] n = m.split(" ");
+			
+		}
+		scan.close();
+	}
+}

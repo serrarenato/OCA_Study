@@ -1,0 +1,18 @@
+package br.com.java.stacks;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class MaximumElement {
+	public static void main(String[] args) {
+		List<Integer> operations = new ArrayList<>();
+		Scanner scan = new Scanner(System.in);
+		int nQueries = scan.nextInt();
+		for (int x=0;x<nQueries;x++) {
+			String m = scan.next();
+			String[] n = m.split(" ");
+		}
+		scan.close();
+	}
+}

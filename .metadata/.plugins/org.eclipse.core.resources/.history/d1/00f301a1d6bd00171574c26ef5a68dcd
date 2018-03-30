@@ -1,0 +1,51 @@
+package br.com.java.stacks;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class MaximumElement2 {
+	class Values{
+		public int value;
+		public int maxValue;
+	}
+	public static void main(String[] args) {
+		Stack<Values> stack = new Stack<>();
+
+		Scanner scan = new Scanner(System.in);
+		int nQueries = scan.nextInt();
+		for (int x = 0; x < nQueries; x++) {
+			Integer m = scan.nextInt();			
+			Integer operation = 0;
+			Integer value = 0;
+			operation = m;
+			if (m.equals(1)) 				
+				value = scan.nextInt();
+			
+			process(operation, value, stack);
+
+		}
+		scan.close();
+	}
+
+	private static void process(Integer operation, Integer value, Stack<Values> stack) {
+		switch (operation) {
+		case 1:
+			stack.push(value);
+			break;
+		case 2:
+			stack.pop();
+			break;
+		case 3:
+			System.out.println(getMax(stack));
+			break;
+		}
+	}
+
+	private static int getMax(Stack<Integer> stack) {
+		int max = 0;
+		for (Integer integer : stack) {
+			max = integer > max ? integer : max;
+		}
+		return max;
+	}
+}

@@ -1,0 +1,36 @@
+package br.com.java.stacks;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class EqualStacks {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n1 = in.nextInt();
+		int n2 = in.nextInt();
+		int n3 = in.nextInt();
+		Stack<Integer> h1= new Stack<>();
+		for (int h1_i = 0; h1_i < n1; h1_i++) {
+			h1.add(in.nextInt());
+		}
+		Stack<Integer> h2= new Stack<>();
+		for (int h2_i = 0; h2_i < n2; h2_i++) {
+			h2.add(in.nextInt());
+		}
+		Stack<Integer> h3= new Stack<>();
+		for (int h3_i = 0; h3_i < n3; h3_i++) {
+			h3.add(in.nextInt());
+		}
+		while(checkisEquals(h1, h2, h3)){
+			}
+		}
+
+	private static boolean checkisEquals(Stack<Integer> h1, Stack<Integer> h2, Stack<Integer> h3) {
+	     Object[] vals = stack.toArray();
+	        for (Object obj : vals) {
+	            System.out.println(obj);
+	        }
+		return true;
+		
+	}
+}

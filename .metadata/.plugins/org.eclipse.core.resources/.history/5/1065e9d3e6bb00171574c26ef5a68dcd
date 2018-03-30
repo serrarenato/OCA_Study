@@ -1,0 +1,48 @@
+package br.com.java.arrays;
+
+/*
+ * With HashMap instead of list
+ */
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class CountStrings2 {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+
+		Map<String, Integer> list = new HashMap<>();
+
+		while (T-- > 0) {
+			String str = sc.next();
+			if (list.containsKey(str)) {
+				Integer value = (Integer) list.get(str);
+				list.put(str, value++);
+			} else
+				list.put(str, 1);
+		}
+		int Q = sc.nextInt();
+		List<String> listSeek = new ArrayList<>();
+		while (Q-- > 0) {
+			listSeek.add(sc.next());
+		}
+
+		seekinArray(listSeek, list);
+
+	}
+
+	private static void seekinArray(List<String> listSeek, Map<String, Integer> list) {
+
+		for (String string2 : listSeek) {
+			if (list.containsKey(string2))
+				System.out.println(list.get(string2));
+			else
+				System.out.println("0");
+
+		}
+
+	}
+}

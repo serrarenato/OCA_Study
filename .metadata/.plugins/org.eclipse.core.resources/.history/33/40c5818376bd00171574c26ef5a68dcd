@@ -1,0 +1,25 @@
+package br.com.java.stacks;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+
+public class MaximumElement {
+	public static void main(String[] args) {
+		Stack<Integer> stack = new Stack();
+		
+		Scanner scan = new Scanner(System.in);
+		int nQueries = scan.nextInt();
+		for (int x=0;x<nQueries;x++) {
+			String m = scan.next();
+			String[] n = m.split(" ");
+			if (n>1) {
+				
+			}else {
+				Integer operation=Integer.parseInt(m) ;
+			}
+				
+		}
+		scan.close();
+	}
+}

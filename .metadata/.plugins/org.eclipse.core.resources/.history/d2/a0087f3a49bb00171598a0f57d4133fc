@@ -1,0 +1,52 @@
+package br.com.java.arrays;
+
+/*
+ * With set instead of list
+ */
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+
+class testeDTO {
+	Integer number;
+	String string;
+	public CountStrings2() {};
+	public CountStrings2(int number)
+	{
+		this.number= number;
+		
+	}
+}
+
+public class CountStrings2 {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int T = sc.nextInt();
+		Set<testeDTO> list = new HashSet<>();
+		while (T-- > 0) {
+			if (list.contains(arg0))
+				list.add(sc.next());
+		}
+		int Q = sc.nextInt();
+		List<String> listSeek = new ArrayList<>();
+		while (Q-- > 0) {
+			listSeek.add(sc.next());
+		}
+
+		for (String string : listSeek) {
+			System.out.println(seekinArray(string, list));
+		}
+	}
+
+	private static int seekinArray(String string, Set<String> list) {
+		int number = 0;
+		for (String string2 : list) {
+			if (string2.equals(string))
+				number++;
+
+		}
+		return number;
+	}
+}
