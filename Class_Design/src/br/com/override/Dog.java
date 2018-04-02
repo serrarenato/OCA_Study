@@ -3,7 +3,7 @@ package br.com.override;
 import java.io.FileNotFoundException;
 
 public class Dog extends Animal{
-	@Override
+	@Override1
 	public void swim() throws FileNotFoundException{ // Override exception less generic
 		System.out.println("I am Flyiing");
 		 throw new NullPointerException();
