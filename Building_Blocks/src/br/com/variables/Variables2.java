@@ -1,6 +1,8 @@
 package br.com.variables;
 
 public class Variables2 {
+	int p2=p1;
+	static int p1=9;
 	public static void main(String[] args) {
 		long long1=1234;
 		int int1=1234;
