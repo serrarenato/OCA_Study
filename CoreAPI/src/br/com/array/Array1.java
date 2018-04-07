@@ -11,7 +11,7 @@ public class Array1 {
 		}else {
 			System.out.println("array is not null");
 		}
-		arrayNull[0].isEmpty()
+		arrayNull[0].isEmpty();
 		////////////////////
 		String[] o = new String[]{"a","b","c"};	
 		System.out.println(Arrays.toString(o));
