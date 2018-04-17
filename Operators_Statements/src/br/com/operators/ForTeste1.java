@@ -8,5 +8,6 @@ public class ForTeste1 {
 			z=i++;
 			System.out.println("teste"+i);
 		}
+		for (int x=0; x<10; System.out.println(x))x++;
 	}
 }

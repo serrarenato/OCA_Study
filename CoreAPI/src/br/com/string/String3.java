@@ -21,14 +21,15 @@ public class String3 {
 	
 		String nova;
 		for (int x=0;x<s.length();x++) {
-			nova = s.replace(s.charAt(x), '');
+			//nova = s.replace(s.charAt(x), '');
+			
 			for (int y=0;y<s.length();y++) {{
 				
 			}
 				
 			}
 		}
-		
+		return null;
 	}
 
 	public static void main(String[] args) {
