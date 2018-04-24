@@ -7,6 +7,7 @@ public class TestException {
 	public static void main(String... args) throws Exception {
 		try {
 			method();
+			method1();
 		}catch (IOException e) {
 			System.out.println("IOException teste");
 		}
@@ -29,11 +30,10 @@ public class TestException {
 			e.printStackTrace();
 		}		
 	}
-	private Object method1() throws IOException{		
+	private static IOException method1() throws IOException{		
 		try {
-			 return new IOException("teste IO");
-			 String
-		}catch(RuntimeException e) {
+			 return new IOException("teste IO");			
+		}catch(Exception e) { //it isnt possible put IOException or FileNotFoundException Compiler error
 			e.printStackTrace();
 		}	
 		return null;
