@@ -2,7 +2,7 @@ package br.com.interface1;
 
 @FunctionalInterface
 public interface Interface1 {
-	public abstract boolean test(String op);
+	public  boolean test(String op);
 
 	// public abstract boolean test2(String op); only one method abstract in a Funcional Interface
 	

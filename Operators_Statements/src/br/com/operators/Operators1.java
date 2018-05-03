@@ -24,5 +24,6 @@ public class Operators1 {
 		 System.out.println(x);
 		 System.out.println(x > 2 ? x <	 4 ? 10 : 8 : 7);
 		
+		
 	}
 }
