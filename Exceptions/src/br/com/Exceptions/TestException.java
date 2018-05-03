@@ -5,6 +5,7 @@ import java.io.IOException;
 
 public class TestException {
 	public static void main(String... args) throws Exception {
+		System.out.println(Math.PI);
 		try {
 			method();
 			method1();
@@ -20,7 +21,7 @@ public class TestException {
 		//	throw new Exception("teste3");
 			System.out.println("rerere");
 		}
-
+		
 	}
 
 	private static void method() throws IOException{		
