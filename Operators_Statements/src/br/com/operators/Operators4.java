@@ -12,5 +12,14 @@ public class Operators4 {
 		System.out.println(1==1.0);
 		System.out.println((3/2)==1.0f);
 		
+		x=5;
+		int xx=-3;
+		System.out.println(x%xx);
+		x=-5;
+		System.out.println(x%xx);
+		System.out.println(21%-2);
+		System.out.println(-21%-2);
+		System.out.println(-21%2);
+		
 	}
 }
