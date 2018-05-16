@@ -16,5 +16,17 @@ public class Array3 {
 		int [] x1 = {1,3,5}; //Array constants can only be used in 		 initializers
 		System.out.println(Arrays.deepToString(x));
 		System.out.println(Arrays.toString(x1));
+		
+		String array1[] = new String[10];
+		Arrays.fill(array1, "renato"); //one dimensional only
+		System.out.println(Arrays.toString(array1));
+		//char xx=1;
+		//byte xx=1;
+		//short xx=1;
+		//long xx=1; // erro
+		//double xx=1; //erro
+		//float xx=1; //erro
+		int xx=1;
+		System.out.println(array1[xx]);
 	}
 }

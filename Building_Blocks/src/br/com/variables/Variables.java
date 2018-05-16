@@ -4,7 +4,7 @@ public class Variables {
 	static int  b=30;
 	public int xx;
 	static boolean xxx;
-	static public  long main(String[] args) {
+	static public  void main(String[] args) {
 		b=20;
 		Sample somar1 = a-> {
 			return a+b;
@@ -24,17 +24,23 @@ public class Variables {
 		//boolean t= new boolean("//rere");
 		System.out.println(new Boolean("true"));
 		System.out.println(Boolean.parseBoolean("true"));
-		//boolean t= new boolean("//rere");
-	
-		System.out.println(xxx);
+		boolean t= new Boolean("TRUE");
+		System.out.println(t);
+		sum(10);
+		double p = 10f;
+		int ppp=10;
+		long pp= ppp;
 		
 		
-		Sample somar3= a-> {
-			return a+variables.xx;
-		};
-		System.out.println(somar3.sum(10));
-		return variables.xx=10;
+		//Sample somar3= a-> {
+		//	return a+variables.xx;
+	//	};
+	//	System.out.println(somar3.sum(10));
+	//	return variables.xx=10;
 			
+	}
+	public static void sum(double x) {
+		System.out.println(x);
 	}
 }
 

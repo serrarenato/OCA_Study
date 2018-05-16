@@ -7,6 +7,7 @@ public class Interface2 {
 		Teste teste2 = new Teste2();
 		System.out.println(teste2.method1(true));
 		System.out.println(Teste.method2(true));
+		System.out.println(new Teste() {}.method1(true));
 	}
 
 }

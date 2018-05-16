@@ -18,8 +18,9 @@ public class ArrayList5 {
 		strings.add("A");
 		strings.add("B");
 		strings.add(0, "1");
-		strings.set(2, "2");
-		System.out.println(strings);
+		Object o = strings.set(2, "2"); //return the object previously
+		System.out.println("Object Previus: "+o);
+		System.out.println(" Strings :"+strings);
 		
 		strings.spliterator();
 		strings.retainAll(new ArrayList<String>() {{add("A"); add("1");}});
