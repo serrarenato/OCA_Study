@@ -6,15 +6,15 @@ import java.time.temporal.ChronoField;
 
 public class LocalDateTime2 {
 	public static void main(String[] args) {
-	
+
 		LocalDate date = LocalDate.of(2018, 2, 15);
-		LocalDateTime dateTime = date.atTime(10,20);
+		LocalDateTime dateTime = date.atTime(10, 20);
 		System.out.println(date);
 		System.out.println(dateTime);
-		System.out.println(dateTime.getDayOfMonth());
-		System.out.println(dateTime.getDayOfWeek());
-		System.out.println(dateTime.getMonth());
-		System.out.println(dateTime.getMonthValue());
+		System.out.println("getDayOfMonth:" + dateTime.getDayOfMonth());
+		System.out.println("getDayOfWeek:" + dateTime.getDayOfWeek());
+		System.out.println("getMonth:" + dateTime.getMonth());
+		System.out.println("getMonthValue:" + dateTime.getMonthValue());
 		System.out.println("----------------------------------");
 		dateTime = LocalDateTime.now();
 		System.out.println(dateTime.get(ChronoField.DAY_OF_MONTH));
