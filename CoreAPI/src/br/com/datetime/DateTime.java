@@ -25,7 +25,8 @@ public class DateTime {
 		Period onMonth = Period.ofMonths(3);
 		dt=dt.plus(onMonth);
 		System.out.println(dt);
-		System.out.println(dt.format(DateTimeFormatter.BASIC_ISO_DATE));
+		System.out.println("Basic ISO "+dt.format(DateTimeFormatter.BASIC_ISO_DATE));
+		System.out.println("Local ISO "+dt.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
 		
 		LocalDateTime d1 = LocalDateTime.of(2015, 5, 10, 11, 22, 33);
 		Period p = Period.ofDays(1).ofYears(2);
