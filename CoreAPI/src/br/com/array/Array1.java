@@ -13,7 +13,7 @@ public class Array1 {
 		}
 		arrayNull[0].isEmpty();
 		////////////////////
-		String[] o = new String[]{"a","b","c"};	
+		String[] o = new String[]{"a","b","c"};	//Dont put size when you inicialize anonymous
 		System.out.println(Arrays.toString(o));
 		Object[] e = o;
 		System.out.println(Arrays.toString(e));
